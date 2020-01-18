@@ -33,7 +33,11 @@ class HomeController extends Controller
      */
     public function clear()
     {
-        Artisan::call('optimize');
+        try {
+            Artisan::call('optimize', ['--quiet' => true]);
+        } catch(Exception $e) {
+            dd($e);
+        }
 
         echo '<h1>Optimized</h1>';
     }
