@@ -13,7 +13,7 @@
                                 <h3 class="mb-0">{{ __('Report Cards') }}</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('user.create') }" class="btn btn-sm btn-primary">{{ __('Create New Report Card') }}</a>
+                                <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary">{{ __('Create New Report Card') }}</a>
                             </div>
                         </div>
                     </div>
