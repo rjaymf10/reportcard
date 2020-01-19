@@ -9,9 +9,6 @@
                 <div class="card bg-secondary shadow border-0">
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
-                            <small>
-                                <a href="{{ route('register') }}">{{ __('Create new account') }}</a> {{ __('OR Sign in with these credentials:') }}
-                            </small>
                             <br>
                             <small>
                                 {{ __('Username') }} <strong>admin@argon.com</strong>
@@ -60,18 +57,18 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-6">
+                    {{-- <div class="col-6">
                         @if (Route::has('password.request'))
                             <a href="{{ route('password.request') }}" class="text-light">
                                 <small>{{ __('Forgot password?') }}</small>
                             </a>
                         @endif
-                    </div>
-                    <div class="col-6 text-right">
+                    </div> --}}
+                    {{-- <div class="col-6 text-right">
                         <a href="{{ route('register') }}" class="text-light">
                             <small>{{ __('Create new account') }}</small>
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
